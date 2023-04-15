@@ -36,9 +36,9 @@ namespace BillyBosta_DiscordApp
             await Client.WaitForReadyAsync(stoppingToken);
 
             // If DOTNET_ENVIRONMENT is set to development, only register the commands to a single guild
-            if (_environment.IsDevelopment())
+            /*if (_environment.IsDevelopment())
                 await _interactionService.RegisterCommandsToGuildAsync(_configuration.GetValue<ulong>("DevGuild"));
-            else
+            else*/
                 await _interactionService.RegisterCommandsGloballyAsync();
         }
 

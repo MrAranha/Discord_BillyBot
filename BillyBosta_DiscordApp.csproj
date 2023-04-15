@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>dotnet-BillyBosta_DiscordApp-b2397818-3581-4722-bf9e-b22978a02d29</UserSecretsId>
+    <UserSecretsId>6dd3ff29-bce0-4cd3-b240-3d4a3db1ead9</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +14,6 @@
     <PackageReference Include="Discord.Net.Core" Version="3.10.0" />
     <PackageReference Include="Discord.Net.Webhook" Version="3.10.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
-	<PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="6.0.1" />
   </ItemGroup>
 
   <ItemGroup>

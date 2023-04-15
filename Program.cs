@@ -15,7 +15,7 @@ IHost host = Host.CreateDefaultBuilder()
             TotalShards = 4
         };
 
-        config.Token = context.Configuration["token"];
+        config.Token = context.Configuration["Token"];
 
         config.ShardIds = new[] { 1 };
     })
