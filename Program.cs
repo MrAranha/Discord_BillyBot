@@ -16,6 +16,8 @@ IHost host = Host.CreateDefaultBuilder()
         };
 
         config.Token = context.Configuration["token"];
+
+        config.ShardIds = new[] { 1 };
     })
     // Optionally wire up the command service
     .UseCommandService((context, config) =>

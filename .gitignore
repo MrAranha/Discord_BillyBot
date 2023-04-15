@@ -55,6 +55,7 @@ ipch/
 # Visual Studio profiler
 *.psess
 *.vsp
+*.vsidx
 *.vspx
 
 # Guidance Automation Toolkit
