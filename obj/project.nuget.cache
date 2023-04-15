@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8VCVsBhOvlwMxEKZOtt62MqUvirXjInCruRC6im7GengXrwuThvTS1UzgGASIeuQaFSpEWUOd7W2hhSyXiMjqA==",
+  "dgSpecHash": "Jvj4toPocxmhHA07fwvzX/Bx4i5F/NA8P+Iu9XaYGsCsKh6KWElSwd5qBVueZELGRgfiaF3fF2RMSX/ZgWBvJA==",
   "success": true,
-  "projectFilePath": "E:\\BillyBosta\\Billy_DiscordBot\\Billy_DiscordBot.csproj",
+  "projectFilePath": "E:\\BillyBosta\\BillyBosta_Bot\\Billy_DiscordBot.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

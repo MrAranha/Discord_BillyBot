@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\BillyBosta\\Billy_DiscordBot\\Billy_DiscordBot.csproj": {}
+    "E:\\BillyBosta\\BillyBosta_Bot\\Billy_DiscordBot.csproj": {}
   },
   "projects": {
-    "E:\\BillyBosta\\Billy_DiscordBot\\Billy_DiscordBot.csproj": {
+    "E:\\BillyBosta\\BillyBosta_Bot\\Billy_DiscordBot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\BillyBosta\\Billy_DiscordBot\\Billy_DiscordBot.csproj",
+        "projectUniqueName": "E:\\BillyBosta\\BillyBosta_Bot\\Billy_DiscordBot.csproj",
         "projectName": "Billy_DiscordBot",
-        "projectPath": "E:\\BillyBosta\\Billy_DiscordBot\\Billy_DiscordBot.csproj",
+        "projectPath": "E:\\BillyBosta\\BillyBosta_Bot\\Billy_DiscordBot.csproj",
         "packagesPath": "C:\\Users\\aranh\\.nuget\\packages\\",
-        "outputPath": "E:\\BillyBosta\\Billy_DiscordBot\\obj\\",
+        "outputPath": "E:\\BillyBosta\\BillyBosta_Bot\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
