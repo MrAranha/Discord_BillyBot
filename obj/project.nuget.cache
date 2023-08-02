@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "ajGIvvT3vssxKh/1YQHJjhYpsJ1q1zRqosYDNJYhS0+TiB4Zh8M3HGB/805Nk7APMD6NRS7LuMjk/7yxFFO2bA==",
+  "dgSpecHash": "0B0Z59KQ6KXh9pbm/4ZN22JbtJqtyDQDtlzbrl3ZOxJjTy9aGCXzEVbuyYqUF+wuPxUHJfjomNV11sCRITO4tA==",
   "success": true,
-  "projectFilePath": "E:\\BillyBosta\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
+  "projectFilePath": "C:\\Users\\aranh\\Desktop\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\aranh\\.nuget\\packages\\discord.addons.hosting\\5.2.0\\discord.addons.hosting.5.2.0.nupkg.sha512",
     "C:\\Users\\aranh\\.nuget\\packages\\discord.net\\3.10.0\\discord.net.3.10.0.nupkg.sha512",
     "C:\\Users\\aranh\\.nuget\\packages\\discord.net.commands\\3.10.0\\discord.net.commands.3.10.0.nupkg.sha512",
     "C:\\Users\\aranh\\.nuget\\packages\\discord.net.core\\3.10.0\\discord.net.core.3.10.0.nupkg.sha512",
@@ -47,7 +46,11 @@
     "C:\\Users\\aranh\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\aranh\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\aranh\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\aranh\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+    "C:\\Users\\aranh\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\aranh\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.15\\microsoft.netcore.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\aranh\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.15\\microsoft.windowsdesktop.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\aranh\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.15\\microsoft.aspnetcore.app.ref.6.0.15.nupkg.sha512",
+    "C:\\Users\\aranh\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.15\\microsoft.netcore.app.host.win-x64.6.0.15.nupkg.sha512"
   ],
   "logs": []
 }

@@ -139,7 +139,7 @@ namespace BillyBosta_DiscordApp
             }
             catch (Exception ex)
             {
-                Logger.LogError(ex, "Exception occurred whilst attempting to handle interaction.");
+                Microsoft.Extensions.Logging.Logger.LogError(ex, "Exception occurred whilst attempting to handle interaction.");
 
                 if (arg.Type == InteractionType.ApplicationCommand)
                 {

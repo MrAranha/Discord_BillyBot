@@ -42,7 +42,7 @@ namespace BillyBosta_DiscordApp
 
         public async Task CommandExecutedAsync(Optional<CommandInfo> command, ICommandContext context, IResult result)
         {
-            Logger.LogInformation("Usuário {user} tentou usar o comando {command}", context.User, command.Value.Name);
+            Microsoft.Extensions.Logging.Logger.LogInformation("Usuário {user} tentou usar o comando {command}", context.User, command.Value.Name);
 
             if(!command.IsSpecified || result.IsSuccess)
             {

@@ -2,25 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "Discord.Addons.Hosting/5.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Discord.Net.Commands": "3.8.1",
-          "Discord.Net.Interactions": "3.8.1",
-          "Discord.Net.WebSocket": "3.8.1",
-          "Microsoft.Extensions.Hosting": "6.0.1"
-        },
-        "compile": {
-          "lib/net6.0/Discord.Addons.Hosting.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Discord.Addons.Hosting.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Discord.Net/3.10.0": {
         "type": "package",
         "dependencies": {
@@ -824,21 +805,6 @@
     }
   },
   "libraries": {
-    "Discord.Addons.Hosting/5.2.0": {
-      "sha512": "9uIeGYxCUmiC0iVk19lgiyvTjbbCIkUyxBEPYbpl9yUZzx2dGOPj1bTnJdwHlZAP2Y7888mYKl0/x4t7Fq6rMw==",
-      "type": "package",
-      "path": "discord.addons.hosting/5.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "discord.addons.hosting.5.2.0.nupkg.sha512",
-        "discord.addons.hosting.nuspec",
-        "icon.png",
-        "lib/net6.0/Discord.Addons.Hosting.dll",
-        "lib/net6.0/Discord.Addons.Hosting.xml"
-      ]
-    },
     "Discord.Net/3.10.0": {
       "sha512": "X5V2lM8YO3Vf1oqxmL1/zSAOKmIZ7AAlxbpgdelQlCKXWZSJeEadLqxQRLCa/z6VsK+btdfNHZFxeQjqYPQ9mQ==",
       "type": "package",
@@ -1887,7 +1853,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "Discord.Addons.Hosting >= 5.2.0",
       "Discord.Net >= 3.10.0",
       "Discord.Net.Commands >= 3.10.0",
       "Discord.Net.Core >= 3.10.0",
@@ -1896,21 +1861,17 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aranh\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\aranh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\BillyBosta\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
+      "projectUniqueName": "C:\\Users\\aranh\\Desktop\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
       "projectName": "BillyBosta_DiscordApp",
-      "projectPath": "E:\\BillyBosta\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
+      "projectPath": "C:\\Users\\aranh\\Desktop\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
       "packagesPath": "C:\\Users\\aranh\\.nuget\\packages\\",
-      "outputPath": "E:\\BillyBosta\\BillyBosta_Bot\\obj\\",
+      "outputPath": "C:\\Users\\aranh\\Desktop\\BillyBosta_Bot\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\aranh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -1939,10 +1900,6 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "Discord.Addons.Hosting": {
-            "target": "Package",
-            "version": "[5.2.0, )"
-          },
           "Discord.Net": {
             "target": "Package",
             "version": "[3.10.0, )"
@@ -1975,12 +1932,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.15, 6.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.15, 6.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.15, 6.0.15]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.15, 6.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\aranh\\.dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
