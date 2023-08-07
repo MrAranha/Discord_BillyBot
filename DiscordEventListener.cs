@@ -11,9 +11,9 @@ namespace BillyBosta_DiscordApp
 
         private readonly DiscordSocketClient _client;
         private readonly IServiceScopeFactory _serviceScope;
-        public DiscordEventListener(CancellationToken cancellationToken, DiscordSocketClient client, IServiceScopeFactory serviceScope)
+        public DiscordEventListener(DiscordSocketClient client, IServiceScopeFactory serviceScope)
         {
-            _cancellationToken = cancellationToken;
+            _cancellationToken = new CancellationTokenSource().Token;
             _client = client;
             _serviceScope = serviceScope;
         }

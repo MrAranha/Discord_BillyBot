@@ -21,18 +21,10 @@
     <Compile Remove="Logger.cs" />
     <Compile Remove="InteractionHandler.cs" />
     <Compile Remove="CommandHandler.cs" />
-    <Compile Remove="Modules\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Remove="Modules\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="Modules\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Modules\**" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Enums\" />
   </ItemGroup>
 </Project>
