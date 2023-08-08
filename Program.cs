@@ -1,5 +1,6 @@
-using BillyBosta_DiscordApp;
+using BillyBosta_DiscordApp.Handlers;
 using Discord;
+using Discord.Commands;
 using Discord.Interactions;
 using Discord.WebSocket;
 using MediatR;
@@ -22,7 +23,9 @@ public class Program
                 GatewayIntents = GatewayIntents.AllUnprivileged,
                 LogLevel = LogSeverity.Info
             }))
-            .AddSingleton<DiscordEventListener>()
+            .AddSingleton<CommandService>()
+            .AddSingleton<CommandHandlingService>()
+            .AddSingleton<HttpClient>()
             .AddSingleton(x => new InteractionService(x.GetRequiredService<DiscordSocketClient>()))
             .BuildServiceProvider();
     }
@@ -45,12 +48,12 @@ public class Program
         var client = services.GetRequiredService<DiscordSocketClient>();
         client.Log += LogAsync;
 
-        var listener = services.GetRequiredService<DiscordEventListener>();
-        await listener.StartAsync();
-
+        // Here we initialize the logic required to register our commands.
+        
         await client.LoginAsync(TokenType.Bot, "MTA5NjYwMTk3NTY2OTQwNzg0NA.GfTwrO.RtqTI-orVZ1SoCXOpQcfNoypGWGytKTd3O9VYI");
         await client.StartAsync();
 
+        await services.GetRequiredService<CommandHandlingService>().InitializeAsync();
         await Task.Delay(Timeout.Infinite);
     }
 

@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 namespace BillyBosta_DiscordApp.Modules
 {
     // Interaction modules must be public and inherit from an IInteractionModuleBase
-    public class MainCommands : InteractionModuleBase<SocketInteractionContext>
+    public class MainInteractions : InteractionModuleBase<SocketInteractionContext>
     {
         public InteractionService Commands { get; set; }
         private InteractionHandler _handler;
 
-        public MainCommands(InteractionHandler handler)
+        public MainInteractions(InteractionHandler handler)
         {
             _handler = handler;
         }
