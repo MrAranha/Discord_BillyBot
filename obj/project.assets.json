@@ -2002,7 +2002,6 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Discord.Net >= 3.4.1",
-      "Discord.Net.Commands >= 3.4.1",
       "MediatR >= 10.0.1",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 10.0.1",
       "Microsoft.Extensions.DependencyInjection >= 6.0.0",
@@ -2012,23 +2011,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\aranh\\.nuget\\packages\\": {},
+    "C:\\Users\\Aranha\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aranh\\Desktop\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
+      "projectUniqueName": "D:\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
       "projectName": "BillyBosta_DiscordApp",
-      "projectPath": "C:\\Users\\aranh\\Desktop\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
-      "packagesPath": "C:\\Users\\aranh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aranh\\Desktop\\BillyBosta_Bot\\obj\\",
+      "projectPath": "D:\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
+      "packagesPath": "C:\\Users\\Aranha\\.nuget\\packages\\",
+      "outputPath": "D:\\BillyBosta_Bot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\aranh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Aranha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2056,10 +2055,6 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "Discord.Net": {
-            "target": "Package",
-            "version": "[3.4.1, )"
-          },
-          "Discord.Net.Commands": {
             "target": "Package",
             "version": "[3.4.1, )"
           },
@@ -2104,7 +2099,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

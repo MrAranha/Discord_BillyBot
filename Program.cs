@@ -1,3 +1,4 @@
+using BillyBosta_DiscordApp.DTOs;
 using BillyBosta_DiscordApp.Handlers;
 using Discord;
 using Discord.Commands;
@@ -5,8 +6,10 @@ using Discord.Interactions;
 using Discord.WebSocket;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
+using Newtonsoft.Json;
 using Serilog;
 using Serilog.Events;
+using System.Text.Json;
 
 namespace BillyBosta_DiscordApp;
 
@@ -49,8 +52,12 @@ public class Program
         client.Log += LogAsync;
 
         // Here we initialize the logic required to register our commands.
-        
-        await client.LoginAsync(TokenType.Bot, "MTA5NjYwMTk3NTY2OTQwNzg0NA.GfTwrO.RtqTI-orVZ1SoCXOpQcfNoypGWGytKTd3O9VYI");
+
+        using StreamReader reader = new("appsettings.json");
+        var json = reader.ReadToEnd();
+        AppSettingsDTO AppSettings = JsonConvert.DeserializeObject<AppSettingsDTO>(json);
+
+        await client.LoginAsync(TokenType.Bot, AppSettings.Token);
         await client.StartAsync();
 
         await services.GetRequiredService<CommandHandlingService>().InitializeAsync();

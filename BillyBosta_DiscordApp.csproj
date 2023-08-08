@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <PackageReference Include="Discord.Net" Version="3.4.1" />
-    <PackageReference Include="Discord.Net.Commands" Version="3.4.1" />
     <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
@@ -22,26 +21,9 @@
     <Compile Remove="Logger.cs" />
     <Compile Remove="InteractionHandler.cs" />
     <Compile Remove="CommandHandler.cs" />
-    <Compile Remove="Tasks\Pong\PongRequest.cs" />
-    <Compile Remove="Notifications\**" />
-    <Compile Remove="Handlers\MessageReceivedHandler.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\" />
     <Folder Include="Enums\" />
-    <Folder Include="Tasks\Pong\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Remove="Notifications\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="Notifications\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Notifications\**" />
   </ItemGroup>
 </Project>
