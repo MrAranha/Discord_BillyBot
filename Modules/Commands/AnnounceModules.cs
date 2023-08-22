@@ -24,6 +24,7 @@ namespace BillyBosta_DiscordApp.Modules.Commands
             //Verificação de Cargo do usuário, necessário automatizar isso e linkar
             //com banco de dados em um service genérico para uso futuro
             var user = (Context.User as SocketGuildUser)!;
+            //Verificação manual não é prático nem bom
             var role = Context.Guild.GetRole(1004905652017188945);
             if (!user.Roles.Contains(role))
             {
