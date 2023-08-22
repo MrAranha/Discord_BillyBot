@@ -10,7 +10,6 @@ namespace BillyBosta_DiscordApp.Modules.Commands
 {
     public class AnouncesModules : ModuleBase<SocketCommandContext>
     {
-
         [Command("anuncio")]
         public async Task Anuncio(string title, string anuncio)
         {
