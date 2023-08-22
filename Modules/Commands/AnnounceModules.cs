@@ -48,8 +48,10 @@ namespace BillyBosta_DiscordApp.Modules.Commands
         public async Task Anuncio()
         {
             await ReplyAsync(@"O Padrão para anúncios é de:
-!anuncio (canal) (titulo) (anuncio) (imagem) (canal)
-!anuncio (canal) (titulo) (anuncio) (canal)");
+!anuncio (titulo) (anuncio) (imagem) (canal)
+!anuncio (titulo) (anuncio) (canal)
+
+usar aspas entre parâmetros");
         }
     }
 }
