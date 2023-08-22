@@ -2011,23 +2011,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Aranha\\.nuget\\packages\\": {},
+    "C:\\Users\\aranh\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
+      "projectUniqueName": "C:\\Users\\aranh\\Desktop\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
       "projectName": "BillyBosta_DiscordApp",
-      "projectPath": "D:\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
-      "packagesPath": "C:\\Users\\Aranha\\.nuget\\packages\\",
-      "outputPath": "D:\\BillyBosta_Bot\\obj\\",
+      "projectPath": "C:\\Users\\aranh\\Desktop\\BillyBosta_Bot\\BillyBosta_DiscordApp.csproj",
+      "packagesPath": "C:\\Users\\aranh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aranh\\Desktop\\BillyBosta_Bot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Aranha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aranh\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2094,12 +2094,30 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.15, 6.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.15, 6.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.15, 6.0.15]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.15, 6.0.15]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\aranh\\.dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
