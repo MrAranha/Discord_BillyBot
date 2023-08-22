@@ -11,15 +11,29 @@ namespace BillyBosta_DiscordApp.Modules.Commands
     public class AnouncesModules : ModuleBase<SocketCommandContext>
     {
 
-
         [Command("anuncio")]
         public async Task Anuncio(string title, string anuncio)
         {
             var embed = new EmbedBuilder
             {
                 Title = title,
-                Description = anuncio
+                Description = anuncio,
+                Color = Color.DarkRed
             };
+            embed.WithFooter(EmbedFooter => EmbedFooter.Text = "Void™");
+            await ReplyAsync(embed: embed.Build());
+        }
+        [Command("anuncio")]
+        public async Task Anuncio(string title, string anuncio, string imagem)
+        {
+            var embed = new EmbedBuilder
+            {
+                Title = title,
+                Description = anuncio,
+                ImageUrl = imagem,
+                Color = Color.DarkRed
+            };
+            embed.WithFooter(EmbedFooter => EmbedFooter.Text = "Void™");
             await ReplyAsync(embed: embed.Build());
         }
 
@@ -29,7 +43,7 @@ namespace BillyBosta_DiscordApp.Modules.Commands
             await ReplyAsync(@"O Padrão para anúncios é de:
 !anuncio (canal) (titulo) (anuncio)
 !anuncio (canal) (titulo) (anuncio) (imagem)
-!anuncio (canal) (titulo) (anuncio) (cor) ");
+!anuncio (canal) (titulo) (anuncio)");
         }
     }
 }
