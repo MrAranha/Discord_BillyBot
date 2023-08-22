@@ -2,7 +2,7 @@
 using Discord.Commands;
 using Discord.WebSocket;
 
-namespace BillyBosta_DiscordApp.Modules;
+namespace BillyBosta_DiscordApp.Modules.Commands;
 
 public class CommandModules : ModuleBase<SocketCommandContext>
 {
@@ -11,11 +11,4 @@ public class CommandModules : ModuleBase<SocketCommandContext>
     [Alias("pong", "hello")]
     public Task Pong() =>
         ReplyAsync("Pong!");
-
-
-    [Command("aviso")]
-    public Task Aviso(string teste)
-    {
-        return ReplyAsync(teste);
-    }
 }

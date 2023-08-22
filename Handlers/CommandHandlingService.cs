@@ -15,8 +15,8 @@ namespace BillyBosta_DiscordApp.Handlers
         private readonly CommandService _commands;
         private readonly DiscordSocketClient _discord;
         private readonly IServiceProvider _services;
-        //private readonly IMessageErrorsHandler _errorHandler;
-        public CommandHandlingService(IServiceProvider services)
+        private readonly IMessageErrorsHandler _errorHandler;
+        public CommandHandlingService(IServiceProvider services, IMessageErrorsHandler errorHandler)
         {
             _commands = services.GetRequiredService<CommandService>();
             _discord = services.GetRequiredService<DiscordSocketClient>();
@@ -27,7 +27,7 @@ namespace BillyBosta_DiscordApp.Handlers
             // Hook MessageReceived so we can process each message to see
             // if it qualifies as a command.
             _discord.MessageReceived += MessageReceivedAsync;
-            //_errorHandler = errorHandler;
+            _errorHandler = errorHandler;
         }
 
         public async Task InitializeAsync()

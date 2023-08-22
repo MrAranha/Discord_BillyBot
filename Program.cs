@@ -1,5 +1,6 @@
 using BillyBosta_DiscordApp.DTOs;
 using BillyBosta_DiscordApp.Handlers;
+using BillyBosta_DiscordApp.Interfaces;
 using Discord;
 using Discord.Commands;
 using Discord.Interactions;
@@ -27,6 +28,7 @@ public class Program
                 LogLevel = LogSeverity.Info
             }))
             .AddSingleton<CommandService>()
+            .AddSingleton<IMessageErrorsHandler, MessageErrorsHandler>()
             .AddSingleton<CommandHandlingService>()
             .AddSingleton<HttpClient>()
             .AddSingleton(x => new InteractionService(x.GetRequiredService<DiscordSocketClient>()))
