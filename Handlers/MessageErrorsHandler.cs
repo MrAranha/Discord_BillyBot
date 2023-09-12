@@ -20,7 +20,7 @@ namespace BillyBosta_DiscordApp.Handlers
             switch(result.Error)
             {
                 case CommandError.BadArgCount:
-                    await context.Channel.SendMessageAsync($"Você precisa de parâmetros para executar esse comando!");
+                    await context.Channel.SendMessageAsync($"Contagem incorreta de parâmetros, caso esteja com dúvida digite o comando sem parâmetro algum!");
                     break;
                 default:
                     break;

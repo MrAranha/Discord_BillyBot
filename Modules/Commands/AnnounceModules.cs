@@ -1,5 +1,8 @@
 ﻿using Discord.Commands;
 using Discord;
+using Discord.Webhook;
+using Discord.WebSocket;
+using Discord.Net;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +20,19 @@ namespace BillyBosta_DiscordApp.Modules.Commands
         {
             var client = Context.Client;
             var channel = client.GetChannel(channelID) as SocketTextChannel;
-
-
+            
+            //Verificação de Cargo do usuário, necessário automatizar isso e linkar
+            //com banco de dados em um service genérico para uso futuro
+            var user = (Context.User as SocketGuildUser)!;
+            //Verificação manual não é prático nem bom
+            var role = Context.Guild.GetRole(1004905652017188945);
+            if (!user.Roles.Contains(role))
+            {
+                await ReplyAsync("Você não tem permissão para utilizar esse comando!");
+                return;
+            }
+            
+            
             var embed = new EmbedBuilder
             {
                 Title = title,
@@ -51,7 +65,7 @@ namespace BillyBosta_DiscordApp.Modules.Commands
 !anuncio (titulo) (anuncio) (imagem) (canal)
 !anuncio (titulo) (anuncio) (canal)
 
-usar aspas entre parâmetros");
+Obs: Usar aspas entre parâmetros!");
         }
     }
 }
